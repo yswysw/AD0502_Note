@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#993366"
+    android:orientation="vertical"
+    tools:context="com.example.ad0502_note.activity.AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable
+                ="true"
+            android:focusableInTouchMode="true"
+            android:hint="your_title"
+            android:maxLength="6"/>
+
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/spingarr"
+            />
+
+
+    </LinearLayout>
+
+    <!--<EditText-->
+        <!--android:id="@+id/edt_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:focusable-->
+            <!--="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:hint="your_content"/>-->
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000">
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_to_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成书写"/>
+
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/return_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/write"
+            app:backgroundTint="#ff87ffeb"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AD0502_Note</string>
+
+
+    <string-array name="spingarr">
+        <item>null</item>
+        <item>学习</item>
+        <item>生活</item>
+        <item>旅游</item>
+        <item>约会</item>
+    </string-array>
+
+
+</resources>
